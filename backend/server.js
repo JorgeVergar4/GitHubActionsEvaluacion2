@@ -4,9 +4,9 @@ const mysql = require("mysql2/promise");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-
+// Configuración de la base de datos con variables de entorno testeo
 const {
-  DB_HOST = "10.0.2.134", // acá colocar la IP Privada EC2 DB
+  DB_HOST = "10.0.2.160", // acá colocar la IP Privada EC2 DB
   DB_USER = "root",
   DB_PASSWORD = "admin123",
   DB_NAME = "tienda_perritos",
